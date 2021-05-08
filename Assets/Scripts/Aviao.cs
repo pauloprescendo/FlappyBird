@@ -7,6 +7,7 @@ public class Aviao : MonoBehaviour
     private Rigidbody2D fisica;
     private Diretor diretor;
     private Vector3 posicaoInicial;
+    private bool deveImpulsionar;
 
     [SerializeField]
     private float forca;
@@ -26,6 +27,14 @@ public class Aviao : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            this.deveImpulsionar = true;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (this.deveImpulsionar)
+        {
             this.Impulsionar();
         }
     }
@@ -34,6 +43,7 @@ public class Aviao : MonoBehaviour
     {
         this.fisica.velocity = Vector2.zero;
         this.fisica.AddForce(Vector2.up * this.forca, ForceMode2D.Impulse);
+        this.deveImpulsionar = false;
     }
 
     private void OnCollisionEnter2D(Collision2D colisao)
