@@ -154,6 +154,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoPontuacao: {fileID: 2075632464}
+  aoPontuar:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1911308951}
+        m_TargetAssemblyTypeName: DiretorMultiplayer, Assembly-CSharp
+        m_MethodName: Reviver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &74213731
 Transform:
   m_ObjectHideFlags: 0
@@ -5732,6 +5747,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883034112}
+  - component: {fileID: 883034113}
   m_Layer: 0
   m_Name: Jogador 2
   m_TagString: Untagged
@@ -5757,6 +5773,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883034113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883034111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73db22ed55ebc4984b78b0e8d54ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1005457275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5829,9 +5857,21 @@ MonoBehaviour:
   aoBater:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 883034113}
+        m_TargetAssemblyTypeName: Jogador, Assembly-CSharp
+        m_MethodName: Desativar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1911308951}
-        m_TargetAssemblyTypeName: Diretor, Assembly-CSharp
-        m_MethodName: FinalizarJogo
+        m_TargetAssemblyTypeName: DiretorMultiplayer, Assembly-CSharp
+        m_MethodName: AvisarQueAlguemMorreu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6211,9 +6251,21 @@ MonoBehaviour:
   aoBater:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1839106691}
+        m_TargetAssemblyTypeName: Jogador, Assembly-CSharp
+        m_MethodName: Desativar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1911308951}
-        m_TargetAssemblyTypeName: Diretor, Assembly-CSharp
-        m_MethodName: FinalizarJogo
+        m_TargetAssemblyTypeName: DiretorMultiplayer, Assembly-CSharp
+        m_MethodName: AvisarQueAlguemMorreu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6303,7 +6355,7 @@ GameObject:
   - component: {fileID: 1210913326}
   m_Layer: 0
   m_Name: BarreiraDeObstaculos
-  m_TagString: Untagged
+  m_TagString: Parede
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6736,7 +6788,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1911308951}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Diretor, Assembly-CSharp
         m_MethodName: ReiniciarJogo
         m_Mode: 1
@@ -6854,6 +6906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839106690}
+  - component: {fileID: 1839106691}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Untagged
@@ -6879,6 +6932,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1839106691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839106689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73db22ed55ebc4984b78b0e8d54ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1883273124
 GameObject:
   m_ObjectHideFlags: 0
@@ -7032,7 +7097,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1911308950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41bbfd02fb449e344922f6fb7ea7addb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c28ec662b445e24da1c8ca15d54ecd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1911308952
@@ -7061,7 +7126,7 @@ GameObject:
   - component: {fileID: 1937268653}
   m_Layer: 0
   m_Name: BarreiraDeObstaculos
-  m_TagString: Untagged
+  m_TagString: Parede
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

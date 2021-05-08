@@ -21,7 +21,8 @@ public class Obstaculo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D outro)
     {
-        this.Destruir();
+        if (outro.CompareTag("Parede"))
+            this.Destruir();
     }
 
     public void Destruir()
