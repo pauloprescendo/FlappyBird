@@ -5695,6 +5695,7 @@ GameObject:
   - component: {fileID: 1005457279}
   - component: {fileID: 1005457278}
   - component: {fileID: 1005457277}
+  - component: {fileID: 1005457283}
   m_Layer: 0
   m_Name: aviao2
   m_TagString: Untagged
@@ -5749,6 +5750,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forca: 4
+  aoBater:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1911308951}
+        m_TargetAssemblyTypeName: Diretor, Assembly-CSharp
+        m_MethodName: ReiniciarJogo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!58 &1005457279
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5837,6 +5853,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1005457283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005457275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004b94ad1b17d8040923d0321bc2ec70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1075269932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5963,6 +5991,7 @@ GameObject:
   - component: {fileID: 1177690389}
   - component: {fileID: 1177690392}
   - component: {fileID: 1177690393}
+  - component: {fileID: 1177690395}
   - component: {fileID: 1177690394}
   m_Layer: 0
   m_Name: aviao1
@@ -6087,6 +6116,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forca: 4
+  aoBater:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1911308951}
+        m_TargetAssemblyTypeName: Diretor, Assembly-CSharp
+        m_MethodName: FinalizarJogo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &1177690394
 Animator:
   serializedVersion: 3
@@ -6106,6 +6150,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1177690395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177690388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1359d9b0451c814699aa399339202d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aoPressionarTecla:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1177690393}
+        m_TargetAssemblyTypeName: Aviao, Assembly-CSharp
+        m_MethodName: DarImpulso
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  tecla: 97
 --- !u!4 &1200580392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3146722375236746108, guid: c2376b00142f74b4f8a01cecb8e09400,
