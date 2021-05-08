@@ -23,7 +23,7 @@ public class Diretor : MonoBehaviour
         this.interfaceGameOver.MostrarInterface();
     }
 
-    public void ReiniciarJogo()
+    public virtual void ReiniciarJogo()
     {
         this.interfaceGameOver.EsconderInterface();
         Time.timeScale = 1;
