@@ -499,6 +499,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357504413}
   m_CullTransparentMesh: 1
+--- !u!1 &526646441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526646443}
+  - component: {fileID: 526646442}
+  m_Layer: 0
+  m_Name: ControleDificuldade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &526646442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526646441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecfaba898751ea489367873c85b39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoParaDificuldadeMaxima: 10
+--- !u!4 &526646443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526646441}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7820412, y: 0.05715533, z: -20.45555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535570867
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78888465ce966e4fa1f07d651aede38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoParaGerar: 3
+  tempoParaGerarFacil: 2
+  tempoParaGerarDificil: 0.5
   ManualDeInstrucoes: {fileID: 7413541920487195824, guid: c8d49966156c6414e92382bbbacce9d0,
     type: 3}
 --- !u!4 &680240000
@@ -728,6 +773,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: fundo (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9091605739783328239, guid: d0642c3a7d435374aa2bd8baf54aa6da,
+        type: 3}
+      propertyPath: velocidade
+      value: 
+      objectReference: {fileID: 11400000, guid: d48ebb7dba79ff94cabd4716eb02eba5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0642c3a7d435374aa2bd8baf54aa6da, type: 3}
 --- !u!4 &885333247 stripped
@@ -1014,6 +1065,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075269933}
     m_Modifications:
+    - target: {fileID: 3146722375236746050, guid: c2376b00142f74b4f8a01cecb8e09400,
+        type: 3}
+      propertyPath: velocidade
+      value: 
+      objectReference: {fileID: 11400000, guid: c79b182872474054a86f46a5b46c0168,
+        type: 2}
     - target: {fileID: 3146722375236746108, guid: c2376b00142f74b4f8a01cecb8e09400,
         type: 3}
       propertyPath: m_RootOrder
@@ -6665,6 +6722,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: fundo
       objectReference: {fileID: 0}
+    - target: {fileID: 9091605739783328239, guid: d0642c3a7d435374aa2bd8baf54aa6da,
+        type: 3}
+      propertyPath: velocidade
+      value: 
+      objectReference: {fileID: 11400000, guid: d48ebb7dba79ff94cabd4716eb02eba5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0642c3a7d435374aa2bd8baf54aa6da, type: 3}
 --- !u!1001 &3146722376952681762
@@ -6674,6 +6737,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075269933}
     m_Modifications:
+    - target: {fileID: 3146722375236746050, guid: c2376b00142f74b4f8a01cecb8e09400,
+        type: 3}
+      propertyPath: velocidade
+      value: 
+      objectReference: {fileID: 11400000, guid: c79b182872474054a86f46a5b46c0168,
+        type: 2}
     - target: {fileID: 3146722375236746108, guid: c2376b00142f74b4f8a01cecb8e09400,
         type: 3}
       propertyPath: m_RootOrder
