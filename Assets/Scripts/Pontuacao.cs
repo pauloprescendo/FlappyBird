@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Pontuacao : MonoBehaviour
 {
-    private int pontos;
+    public int Pontos { get; private set; }
     [SerializeField]
     private Text textoPontuacao;
     private AudioSource audioPontuacao;
@@ -17,23 +17,23 @@ public class Pontuacao : MonoBehaviour
 
     public void AdicionarPontos()
     {
-        this.pontos++;
-        this.textoPontuacao.text = this.pontos.ToString();
+        this.Pontos++;
+        this.textoPontuacao.text = this.Pontos.ToString();
         this.audioPontuacao.Play();
     }
 
     public void Reiniciar()
     {
-        this.pontos = 0;
-        this.textoPontuacao.text = this.pontos.ToString();
+        this.Pontos = 0;
+        this.textoPontuacao.text = this.Pontos.ToString();
     }
 
     public void SalvarRecorde()
     {
         int recordAtual = PlayerPrefs.GetInt("recorde");
-        if (this.pontos > recordAtual)
+        if (this.Pontos > recordAtual)
         {
-            PlayerPrefs.SetInt("recorde", this.pontos);
+            PlayerPrefs.SetInt("recorde", this.Pontos);
         }
     }
 }
