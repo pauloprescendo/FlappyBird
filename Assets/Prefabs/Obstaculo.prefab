@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 7413541920487195825}
   - component: {fileID: 7413541920487195826}
   - component: {fileID: -6984343630005944845}
+  - component: {fileID: 6627128769838795571}
   m_Layer: 0
   m_Name: Obstaculo
   m_TagString: Untagged
@@ -206,6 +207,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &6627128769838795571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413541920487195824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.28544402, y: 0.0071361065}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42911196, y: 2.61276}
+  m_EdgeRadius: 0
 --- !u!1 &7413541921791824645
 GameObject:
   m_ObjectHideFlags: 0

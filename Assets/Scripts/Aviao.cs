@@ -14,6 +14,8 @@ public class Aviao : MonoBehaviour
     private float forca;
     [SerializeField]
     private UnityEvent aoBater;
+    [SerializeField]
+    private UnityEvent aoPassarPeloObstaculo;
 
     private void Awake()
     {
@@ -51,6 +53,11 @@ public class Aviao : MonoBehaviour
     {
         this.fisica.simulated = false;
         this.aoBater.Invoke();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        this.aoPassarPeloObstaculo.Invoke();
     }
 
     public void Reiniciar()
